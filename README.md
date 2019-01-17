@@ -16,3 +16,8 @@
 ## Homework Project Site
 
 [https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/](https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/index.html)
+
+## Hybrid Topics
+
+1. [Computer Graphics Crash Course](01-cg-crash-course.md)
+2. Coming soon
