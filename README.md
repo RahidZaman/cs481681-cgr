@@ -2,8 +2,8 @@
 
 ## Syllabus
 
-- [Graduate Syllabus](cgr-s19-grad.pdf)
-- [Undergraduate Syllabus](cgr-s19-undergrad.pdf)
+- [Graduate Syllabus](cs681-cgr-s19-grad.pdf)
+- [Undergraduate Syllabus](cs481-cgr-s19-undergrad.pdf)
 
 ## Wordpress Site
 
