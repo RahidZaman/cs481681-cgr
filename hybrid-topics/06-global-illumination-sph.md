@@ -1,4 +1,4 @@
-# Shading Models Activity Worksheet
+# Global Illumination & Spherical Harmonics Activity Worksheet
 
 ## YouTube Video(s)
 

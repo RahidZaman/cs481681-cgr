@@ -1,4 +1,4 @@
-# Distributed Ray Tracing Activity Worksheet
+# Miscellaneous Topics Activity Worksheet
 
 ## YouTube Video(s)
 

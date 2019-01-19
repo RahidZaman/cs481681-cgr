@@ -13,25 +13,17 @@
 
 [https://www.cs.uaf.edu/~jbmetzgar/](https://www.cs.uaf.edu/~jbmetzgar/)
 
-## Homework Project Site
+## Homeworks
 
-[https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/](https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/index.html)
+The [homework worksheets](homeworks/index.md) are in the `homeworks` folder. The projects will be hosted at [https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/](https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/index.html).
 
-## Hybrid Topics
+## Hybrid Topics Activity Worksheets
 
-1. [Computer Graphics Crash Course](hybrid-topics/01-cg-crash-course.md)
-2. [Ray Tracing](hybrid-topics/02-ray-tracing.md)
-3. [Signed Distance Functions](hybrid-topics/03-signed-distance-functions.md)
-4. [Shading Models](hybrid-topics/04-shading-models.md)
-5. [Monte Carlo Methods](hybrid-topics/05-monte-carlo-methods.md)
-6. [Global Illumination](hybrid-topics/06-global-illumination.md)
-7. [Bounding Volume Hierarchies](hybrid-topics/07-bounding-volume-hierarchies.md)
-8. [Distributed Ray Tracing](hybrid-topics/08-distributed-ray-tracing.md)
-9. [Scene Graphs](hybrid-topics/09-scene-graphs.md)
-10. [Real-time Rendering](hybrid-topics/10-realtime-rendering.md)
-11. [Shadows](hybrid-topics/11-shadows.md)
-12. [Post Processing](hybrid-topics/12-post-processing.md)
-13. [Creative Synthesis](hybrid-topics/13-creative-synthesis.md)
+The [activity worksheets](hybrid-topics/index.md) are in the `hybrid-topics` folder.
+
+## Class Slides & Notes
+
+The [class slides] are in the `slides` folder. A "notes" version can be viewed with the Markdown file which is used to create the Powerpoint version.
 
 ## Setting up for Graphics
 

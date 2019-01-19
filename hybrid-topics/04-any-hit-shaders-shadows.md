@@ -1,4 +1,4 @@
-# Global Illumination Activity Worksheet
+# Any Hit Shaders and Shadows Activity Worksheet
 
 ## YouTube Video(s)
 

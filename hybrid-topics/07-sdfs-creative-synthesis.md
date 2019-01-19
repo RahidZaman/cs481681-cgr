@@ -1,4 +1,4 @@
-# Scene Graphs Activity Worksheet
+# Signed Distance Functions & Creative Synthesis Activity Worksheet
 
 ## YouTube Video(s)
 

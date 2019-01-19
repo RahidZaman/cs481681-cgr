@@ -1,4 +1,4 @@
-# Bounding Volume Hierarchies Activity Worksheet
+# Acceleration Structures Activity Worksheet
 
 ## YouTube Video(s)
 

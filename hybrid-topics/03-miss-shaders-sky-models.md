@@ -1,4 +1,4 @@
-# Creative Synthesis Activity Worksheet
+# Miss Shaders & Sky Models Activity Worksheet
 
 ## YouTube Video(s)
 

@@ -1,11 +1,19 @@
 
 SRCS := $(wildcard *.md)
-PPTX := $(SRCS:.md=.pptx)
+PPTX := $(addprefix pptx/,$(SRCS:.md=.pptx))
+PDF  := $(addprefix pdf/,$(SRCS:.md=.pdf))
 DEPS := custom-reference.pptx
 
-.PHONY: all
+.PHONY: all print
 
-all: $(PPTX)
+all: $(PPTX) $(PDF)
 
-%.pptx : %.md $(DEPS)
+clean:
+	$(RM) $(PPTX)
+	$(RM) $(PDF)
+
+pptx/%.pptx : %.md $(DEPS)
 	pandoc $< -o $@ --reference-doc=custom-reference.pptx
+
+pdf/%.pdf : %.md
+	pandoc -s $< -o $@

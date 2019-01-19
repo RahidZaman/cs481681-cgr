@@ -1,4 +1,4 @@
-# Signed Distance Functions Activity Worksheet
+# Closest Hit Shaders & BRDFs Activity Worksheet
 
 ## YouTube Video(s)
 
