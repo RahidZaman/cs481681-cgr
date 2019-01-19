@@ -20,7 +20,18 @@
 ## Hybrid Topics
 
 1. [Computer Graphics Crash Course](hybrid-topics/01-cg-crash-course.md)
-2. Coming soon
+2. [Ray Tracing](hybrid-topics/02-ray-tracing.md)
+3. [Signed Distance Functions](hybrid-topics/03-signed-distance-functions.md)
+4. [Shading Models](hybrid-topics/04-shading-models.md)
+5. [Monte Carlo Methods](hybrid-topics/05-monte-carlo-methods.md)
+6. [Global Illumination](hybrid-topics/06-global-illumination.md)
+7. [Bounding Volume Hierarchies](hybrid-topics/07-bounding-volume-hierarchies.md)
+8. [Distributed Ray Tracing](hybrid-topics/08-distributed-ray-tracing.md)
+9. [Scene Graphs](hybrid-topics/09-scene-graphs.md)
+10. [Real-time Rendering](hybrid-topics/10-realtime-rendering.md)
+11. [Shadows](hybrid-topics/11-shadows.md)
+12. [Post Processing](hybrid-topics/12-post-processing.md)
+13. [Creative Synthesis](hybrid-topics/13-creative-synthesis.md)
 
 ## Setting up for Graphics
 

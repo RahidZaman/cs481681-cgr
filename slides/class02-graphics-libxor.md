@@ -12,9 +12,16 @@
 - WebGL Pipeline
 - WebGL Shaders
 
-# Vectors
+## Vectors
 
----
+- $$\mathbf{v} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$$
+- Represents magnitude and direction
+- _Homogeneous coordinates_ adds a fourth $w$ element
+- Now we can multiply 4x4 matrices
+- And we can project to 3D by dividing by the $w$ component
+- $$\begin{pmatrix}x \\ y \\ z \\ w \end{pmatrix} \rightarrow \begin{pmatrix}\tfrac{x}{w} \\ \tfrac{y}{w} \\\tfrac{z}{w} \end{pmatrix}$$
+- If we set $w=1$, then we can represent position.
+- If we set $w=0$, then we only represent direction.
 
 ## Data Layout
 
@@ -49,9 +56,23 @@ class Vector3 {
 - `Vector3.make(x, y, z)`
 - `Vector3.makeUnit(x, y, z)`
 
-# Matrices
+## Matrices
 
----
+- $$\mathbf{M} = \begin{pmatrix}
+m_{11} & m_{12} & m_{13} & m_{14} \\
+m_{21} & m_{22} & m_{23} & m_{24} \\
+m_{31} & m_{32} & m_{33} & m_{34} \\
+m_{41} & m_{42} & m_{43} & m_{44} \\
+\end{pmatrix}$$
+- $m_{ij}$ is $i\text{th}$ row and $j\text{th}$ column
+- Represents orientation and origin
+- $\mathbf{u}$, $\mathbf{v}$, $\mathbf{w}$ are axes and $\mathbf{o}$ is the origin of the system
+- $$\mathbf{M} = \begin{pmatrix}
+\mathbf{u}_{x} & \mathbf{v}_{x} & \mathbf{w}_{x} & \mathbf{o}_{x} \\
+\mathbf{u}_{y} & \mathbf{v}_{y} & \mathbf{w}_{y} & \mathbf{o}_{y} \\
+\mathbf{u}_{z} & \mathbf{v}_{z} & \mathbf{w}_{z} & \mathbf{o}_{z} \\
+0 & 0 & 0 & 1 \\
+\end{pmatrix}$$
 
 ## Data Layout
 
@@ -98,8 +119,6 @@ class Matrix4 {
 
 # Transformations
 
----
-
 ## Matrix4 Transformations
 - `let m = new Matrix4()`
 - `let I = Matrix4.makeIdentity()`
@@ -109,17 +128,28 @@ class Matrix4 {
 - `let P = Matrix4.makePerspectiveY(fieldOfViewY, aspectRatio, zNear, zFar)`
 - `let C = Matrix4.makeLookAt(origin, center, up)`
 
-# WebGL Pipeline
+## WebGL Pipeline
 
----
+- What are the essentials to rendering an object?
+- Vertex Shader
+- Fragment Shader
+- Shader Program
+- Array Buffer and Vertex Attrib Pointers
+- Uniform Variables and Texture Maps
+- Draw Call
 
-# WebGL Shaders
+## WebGL Shaders
 
----
+- Create/Compile a Vertex Shader
+- Create/Compile a Fragment Shader
+- Create a Shader Program
+- Attach shaders and link
+- WebGL 1.0 does not have
+- Computer Shaders
+- Geometry Shaders
+- And so on ...
 
 # Graphics with the LibXOR Library
-
----
 
 ## Using the LibXOR Library
 
@@ -128,6 +158,8 @@ class Matrix4 {
 1. Create a `div` with an id
 2. Import the LibXOR javascript library
 3. Import or embed your application
+
+## A Simple HTML5 Example
 
 ```html
 <!-- make a div as a container for the library -->
@@ -252,3 +284,10 @@ app.init();
 app.start();
 </script>
 ```
+
+# Hybrid Topics
+
+## Ray Tracing
+
+- Watch YouTube Video
+- Complete Activity Worksheet
