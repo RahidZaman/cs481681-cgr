@@ -102,24 +102,31 @@ class Matrix4 {
 
 ## Operations
 
-- `let m = new Matrix4()`
-- `m.determinant()`
-- `m.inverse()`
-- `m.transpose()`
+- `M.determinant()` returns $\det \mathbf{A}$
+- `M.inverse()` returns $\mathbf{M}^{-1}$
+- `M.transpose()` returns $\mathbf{M}^T$
+- `A.mult(B)` returns $\mathbf{A}\mathbf{B}$
+- `A.multMatrix(B)` computes $\mathbf{A} \leftarrow \mathbf{A}\mathbf{B}$
+- `A.loadMatrix()` computes $\mathbf{A} \leftarrow \mathbf{I}$
+
+## Construction and Array Conversion
+
+- `let M = new Matrix4()` creates identity matrix
 - `Matrix4.makeColMajor(m11, m21, m31, m41, ...)`
 - `Matrix4.makeRowMajor(m11, m12, m13, m14, ...)`
-- `m.asColMajorArray()`
-- `m.asRowMajorArray()`
+- `M.asColMajorArray()` returns `[m11, m21, m31, m41, ...]`
+- `M.asRowMajorArray()` returns `[m11, m12, m13, m14, ...]`
 
 ## Interactions with Vector3
 
-- Get a column vector: `let a = m.col(1)`
-- Get a row vector: `let b = m.row(1)`
-- Transform: `let b = m.transform3(a)`
+- Get a column vector: `let a = M.col3(1)`
+- Get a row vector: `let b = M.row3(1)`
+- Transform: `let b = M.transform3(a)` computes $\mathbf{M}(a_x\ a_y\ a_z\ 1)^T$
 
 # Transformations
 
 ## Matrix4 Transformations
+
 - `let m = new Matrix4()`
 - `let I = Matrix4.makeIdentity()`
 - `let T = Matrix4.makeTranslation(x, y, z)`
@@ -261,9 +268,9 @@ class App {
         scene.projectionMatrix = Matrix4.makePerspective(45.0, xor.graphics.aspectRatio, 1.0, 100.0);
         scene.cameraMatrix = Matrix4.makeOrbit(45.0, 45.0, 5.0);
         let rc = xor.renderconfigs.use('default');
-        rc.uniformMatrix4('ProjectionMatrix', scene.projectionMatrix);
-        rc.uniformMatrix4('CameraMatrix', scene.cameraMatrix);
-        rc.uniformMatrix4('WorldMatrix', Matrix4.makeRotation(xor.t1, 0, 1, 0));
+        rc.uniformMatrix4f('ProjectionMatrix', scene.projectionMatrix);
+        rc.uniformMatrix4f('CameraMatrix', scene.cameraMatrix);
+        rc.uniformMatrix4f('WorldMatrix', Matrix4.makeRotation(xor.t1, 0, 1, 0));
         xor.meshes.render('rect');
         xor.renderconfigs.use(null);
     }

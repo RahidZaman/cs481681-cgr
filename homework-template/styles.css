@@ -1,0 +1,139 @@
+@import url('assets/fonts/stylesheet.css');
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        width: 600px;
+    }
+
+    body {
+        font-size: 12pt;
+    }
+
+}
+
+html {
+    display: table;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body {
+    display: table-cell;
+    vertical-align: top;
+    font-family: linlibertine, Georgia, serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+}
+
+pre, .log {
+    font-family: inconsolata, epp, consolas, 'Andale Mono', monospace;
+}
+
+h1,
+h2,
+h3 {
+    font-family: linbiolinum, 'URW Geometric', Futura, sans-serif;
+    line-height: 1.0em;
+}
+
+h1 {
+    font-size: 1.314159em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+table {
+    border: blue;
+    font-family: 'URW Geometric Cond', Futura, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+td,
+th {
+    border-radius: 4px;
+    background: lightgrey;
+    padding: 3px;
+    color: #ffcd00;
+    background: #236192;
+    font-weight: normal;
+}
+
+em {
+    font-style: italic;
+}
+
+/*
+ * #236192 Pantone Plus 647 C - Blue
+ * #ffcd00 Pantone Plus 116 C - Gold
+ * #ffffff White
+*/
+a {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    /* white-space: nowrap; */
+}
+
+a:hover {
+    color: #efdbb2;
+}
+
+.uaf {
+    /* font-family: sans-serif; */
+    color: #ffcd00;
+    background: #236192;
+    border-radius: 4px;
+    margin: auto;
+    padding: 3px;
+    display: table;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.bluehr {
+    background: #236192;
+    height: 0.2em;
+    border: none;
+}
+
+.goldhr {
+    background: #ffcd00;
+    height: 0.2em;
+    border: none;
+}
+
+.centered {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.log {
+    font-size: 0.5em;
+    border-radius: 4px;
+    background: #efdbb2;
+}
+
+.desc {
+    border-radius: 4px;
+    background: #eeeeee;
+}
