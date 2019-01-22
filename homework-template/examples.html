@@ -12,35 +12,25 @@
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 
-    <script src="course.js"></script>
+    <script src="examples.js"></script>
     <script>
-        var coursemeta = new CourseMetadata();
-        coursemeta.writeHeadTitle();
+        var examplemeta = new ExampleMetadata();
+        examplemeta.writeHeadTitle();
     </script>
 </head>
 
 <body>
     <article>
         <script>
-            coursemeta.writeArticleHeader();
-            coursemeta.writeDesc();
-        </script>
-
-        <p>Source Code and Course Content &rightarrow; <a href="https://github.com/microwerx/cs481681-cgr">GitHub</a></p>
-
-        <p><a href="examples.html">Examples</a></p>
-    </article>
-    <article>
-        <script>
-            coursemeta.writeIndex();
+            examplemeta.writeArticleHeader();
+            examplemeta.writeIndex();
         </script>
     </article>
     <hr class="goldhr" />
     <article>
 
         <script>
-            coursemeta.writeStudentIndex();
-            coursemeta.writeArticleFooter();
+            examplemeta.writeArticleFooter();
         </script>
     </article>
 </body>

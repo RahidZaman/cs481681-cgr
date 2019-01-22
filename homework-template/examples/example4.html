@@ -7,14 +7,14 @@
     <meta name="robots" content="index/nofollow">
     <meta name="author" content="Jonathan B. Metzgar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="../styles.css">
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 
-    <script src="course.js"></script>
+    <script src="../examples.js"></script>
     <script>
-        var coursemeta = new CourseMetadata();
+        var coursemeta = new ExampleMetadata();
         coursemeta.writeHeadTitle();
     </script>
 </head>
@@ -22,27 +22,34 @@
 <body>
     <article>
         <script>
-            coursemeta.writeArticleHeader();
+            coursemeta.writeArticleHeader()
             coursemeta.writeDesc();
         </script>
+    </article>
+    <article>
+        <div id="project"></div>
 
-        <p>Source Code and Course Content &rightarrow; <a href="https://github.com/microwerx/cs481681-cgr">GitHub</a></p>
+        <h3>Description &amp; Notes</h3>
 
-        <p><a href="examples.html">Examples</a></p>
+        <!-- Write your main description here -->
+        <p id="desc">This example shows basic usage of the LibXOR library.</p>
+
+        <h3>Log</h3>
+
+        <div id='log' class='log'>Log items here...</div>
+
+        <footer>
+            <hr class="goldhr" />
+        </footer>
     </article>
     <article>
         <script>
-            coursemeta.writeIndex();
-        </script>
-    </article>
-    <hr class="goldhr" />
-    <article>
-
-        <script>
-            coursemeta.writeStudentIndex();
             coursemeta.writeArticleFooter();
         </script>
     </article>
+
+    <script src="LibXOR.js"></script>
+    <script src="example4.js"></script>
 </body>
 
 </html>

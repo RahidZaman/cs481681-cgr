@@ -165,6 +165,14 @@ class Matrix4 {
 1. Create a `div` with an id
 2. Import the LibXOR javascript library
 3. Import or embed your application
+4. Latest version is at my [GitHub LibXOR site](https://www.github.com/microwerx/libxor)
+5. Ignore all the documentation for now, lots of things are in flux
+
+## Example 1 Hello, World WebGL
+
+## Example 2 Adding a shader and geometry
+
+## Example 3 Loading shaders and geometry
 
 ## A Simple HTML5 Example
 
@@ -172,12 +180,16 @@ class Matrix4 {
 <!-- make a div as a container for the library -->
 <div id='graphics'></div>
 <!-- include LibXOR library -->
-<script src="LibXORv0.js"></script>
-<script>
-let vshader = `
-uniform mat4 uProjectionMatrix;
-uniform mat4 uCameraMatrix;
-uniform mat4 uWorldMatrix;
+<script src="LibXOR.js"></script>
+<script>/* Your code here */
+```
+
+## Vertex shader
+
+```glsl
+uniform mat4 ProjectionMatrix;
+uniform mat4 CameraMatrix;
+uniform mat4 WorldMatrix;
 
 attribute vec3 aPosition;
 attribute vec3 aNormal;
@@ -189,7 +201,11 @@ varying vec4 vPosition;
 varying vec3 vNormal;
 varying vec3 vTexcoord;
 varying vec4 vColor;
+```
 
+## Vertex shader
+
+```glsl
 void main() {
     vNormal = uWorldMatrix * vec4(aPosition, 0.0);
     vColor = aColor;
@@ -197,9 +213,11 @@ void main() {
     vPosition = uWorldMatrix * vec4(aPosition, 1.0);
     gl_Position = ProjectionMatrix * CameraMatrix * vPosition;
 }
-`;
+```
 
-let fshader = `
+## Fragment shader
+
+```glsl
 uniform sampler2D map_kd;
 uniform sampler2D map_ks;
 uniform sampler2D map_normal;
@@ -211,7 +229,11 @@ uniform vec3 ks;
 
 uniform vec3 sunDirTo;
 uniform vec3 sunE0;
+```
 
+## Fragment shader
+
+```glsl
 // These MUST match the vertex shader
 varying vec4 vPosition;
 varying vec3 vNormal;
@@ -222,8 +244,11 @@ void main() {
     // set to white
     gl_FragColor = vec4(1.0);
 }
-`;
+```
 
+## App class
+
+```javascript
 class App {
     constructor() {
         // Set the id of the containing DIV
@@ -233,22 +258,35 @@ class App {
     start() {
         this.mainloop();
     }
+    // ...
+}
+```
 
+## Init Function
+
+```javascript
     init() {
         let xor = this.xor;
         let gl = xor.gl;
 
         // Initialize the graphics system
-        xor.graphics.setVideoMode(576, 384);
+        this.xor.graphics.setVideoMode(576, 384);
 
         // create shader program
-        let rc = xor.renderconfigs.create('default');
-        rc.compile(vshader, fshader);
+        let rc = this.xor.renderconfigs.load('basic', 'basic.vert', 'basic.frag');
         rc.depthTest = gl.LESS;
         rc.enableDepthTest = true;
-        xor.renderconfigs.load('raytracer', 'raytracer.vert', 'raytracer.frag');
 
-        let rect = xor.meshes.create('rect');
+        // or we can compile from strings
+        rc = this.xor.renderconfigs.create('default');
+        rc.compile(vshader, fshader); // variables declared elsewhere
+```
+
+## Init function
+
+```javascript
+        // create a mesh
+        let rect = this.xor.meshes.create('rect');
         rect.begin(gl.TRIANGLE_FAN);
         rect.normal(0, 0, 1);
         rect.color(1, 1, 1, 1);
@@ -256,25 +294,35 @@ class App {
         rect.texcoord(0, 1, 0); rect.vertex(0, 1, 0);
         rect.texcoord(1, 1, 0); rect.vertex(1, 1, 0);
         rect.texcoord(1, 0, 0); rect.vertex(1, 0, 0);
-    }
 
-    update(timeInSeconds) {
-        // update state
+        // or load one
+        this.xor.meshes.load('teapot', 'teapot.obj');
     }
+```
+
+## Update and Render Functions
+
+```javascript
+    update(timeInSeconds) { /* update state */ }
 
     render() {
         xor.graphics.clear();
-        let scene = xor.scenes.get('default');
-        scene.projectionMatrix = Matrix4.makePerspective(45.0, xor.graphics.aspectRatio, 1.0, 100.0);
-        scene.cameraMatrix = Matrix4.makeOrbit(45.0, 45.0, 5.0);
+        let projectionMatrix = Matrix4.makePerspective(45.0, xor.graphics.aspectRatio, 1.0, 100.0)
+        let cameraMatrix = Matrix4.makeOrbit(45.0, 45.0, 5.0);
         let rc = xor.renderconfigs.use('default');
-        rc.uniformMatrix4f('ProjectionMatrix', scene.projectionMatrix);
-        rc.uniformMatrix4f('CameraMatrix', scene.cameraMatrix);
-        rc.uniformMatrix4f('WorldMatrix', Matrix4.makeRotation(xor.t1, 0, 1, 0));
-        xor.meshes.render('rect');
+        if (rc) {
+            rc.uniformMatrix4f('ProjectionMatrix', projectionMatrix);
+            rc.uniformMatrix4f('CameraMatrix', cameraMatrix);
+            rc.uniformMatrix4f('WorldMatrix', Matrix4.makeRotation(xor.t1, 0, 1, 0));
+            xor.meshes.render('teapot');
+        }
         xor.renderconfigs.use(null);
     }
+```
 
+## Mainloop function
+
+```javascript
     mainloop() {
         let self = this;
         window.requestAnimationFrame((t) => {
@@ -284,8 +332,11 @@ class App {
             self.mainloop();
         })
     }
-}
+```
 
+- And the actual app instantiation and starting...
+
+```javascript
 let app = new App();
 app.init();
 app.start();

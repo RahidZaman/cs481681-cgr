@@ -13,7 +13,7 @@ canvasContainer.appendChild(canvas);
 let h = (canvasContainer.clientWidth / 1.5) & 0xFFFE;
 canvas.width = h * 1.5;
 canvas.height = h;
-canvas.style.borderRadius = "4";
+canvas.style.borderRadius = "4px";
 
 window.addEventListener("resize", (e) => {
     canvasContainer.style.width = "100%";
