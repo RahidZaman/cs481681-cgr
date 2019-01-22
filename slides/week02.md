@@ -23,6 +23,15 @@
 - If we set $w=1$, then we can represent position.
 - If we set $w=0$, then we only represent direction.
 
+## Homogeneous Coordinates
+
+- Object coordinates $(x_o\ y_o\ z_o\ w_o)^T = \mathbf{W}(x\ y\ z\ w)^T$
+- Eye coordinates $(x_e\ y_e\ z_e\ w_e)^T = \mathbf{C}(x_o\ y_o\ z_o\ w_o)^T$
+- Clip coordinates $(x_c\ y_c\ z_c\ w_c)^T = \mathbf{P}(x_e\ y_e\ z_e\ w_e)^T$
+- Device coordinates $(x_d\ y_d\ z_d)^T = (x_c/w_c\ y_c/w_c\ z_c/w_c)^T$
+- Viewport width and height $(p_x, p_y)$ and origin $(o_x, o_y)$
+- Window coordates $(x_w\ y_w\ z_w)^T = \begin{pmatrix}(p_x/2)x_d + o_x \\ (p_y/2)y_d + o_y \\ \lbrack(f-n)/2\rbrack z_d + (n+f)/2\end{pmatrix}$
+
 ## Data Layout
 
 ```javascript
@@ -207,10 +216,10 @@ varying vec4 vColor;
 
 ```glsl
 void main() {
-    vNormal = uWorldMatrix * vec4(aPosition, 0.0);
+    vNormal = WorldMatrix * vec4(aPosition, 0.0);
     vColor = aColor;
     vTexcoord = aTexcoord;
-    vPosition = uWorldMatrix * vec4(aPosition, 1.0);
+    vPosition = WorldMatrix * vec4(aPosition, 1.0);
     gl_Position = ProjectionMatrix * CameraMatrix * vPosition;
 }
 ```
