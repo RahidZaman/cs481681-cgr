@@ -103,7 +103,7 @@ class App {
         xor.graphics.clear(xor.palette.RED);
 
         let pmatrix = Matrix4.makeOrtho2D(0, xor.graphics.width, 0, xor.graphics.height);
-        let cmatrix = Matrix4.makeIdentity();;
+        let cmatrix = Matrix4.makeIdentity();
         let rc = xor.renderconfigs.use('default');
         if (rc) {
             rc.uniformMatrix4f('ProjectionMatrix', pmatrix);
