@@ -30,12 +30,12 @@
 
 ## Schedule
 
-| Week | Activity | Hybrid |
-| :--: | :-- | :-- |
-| 1 | Introduction | CG Crash Course |
-| 2 | LibXOR Library | Ray Tracing |
-| 3 |  | Signed Distance Functions |
-| 4| 
+| Week  | Activity       | Hybrid                    |
+| :---: | :------------- | :------------------------ |
+|   1   | Introduction   | CG Crash Course           |
+|   2   | LibXOR Library | Ray Tracing               |
+|   3   |                | Signed Distance Functions |
+|   4   |
 
 ## Hybrid Topics Activity
 

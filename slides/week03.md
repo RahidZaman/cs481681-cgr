@@ -2,13 +2,28 @@
 % CS 481/681 Computer Graphics Rendering
 % University of Alaska Fairbanks
 
-# Ray Tracing
+## Ray Tracing
 
-## Overview
+- Essential Ray Tracing Algorithms
+- Ray-Surface Intersection Algorithms
+- Surface Physics
+- Realtime Ray Tracing
 
-- Item 1
-- Item 2
+## Essential Algorithms
 
-## Hybrid Topics
+- Ray-Sphere Intersection
+- Ray-Plane Intersection
+- Ray-Box Intersection
+- Ray-Quadric 
+
+## Ray Tracing Shaders
+
+- Ray Generation Shader
+- Miss Shader
+- Closest Hit Shader
+- Any Hit Shader
+- Bounding Volume Hierarchy Processor
+
+### Hybrid Topics
 
 - Signed Distance Functions
