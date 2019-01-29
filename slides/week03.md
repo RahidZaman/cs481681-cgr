@@ -24,6 +24,24 @@
 - Any Hit Shader
 - Bounding Volume Hierarchy Processor
 
+## Ray Sphere Intersection
+
+## Ray Plane Intersection
+
+## BVH Traversal
+
+- INIT HITRECORD h(cur_t = tmax)
+- Loop through object list
+- t <- INTERSECT(ray, object)
+- IF t < tmin THEN CONTINUE
+- IF t > tmax THEN CONTINUE
+- IF t > cur_t THEN CONTINUE
+- cur_t <- t
+- ANYHIT SHADER
+- END LOOP
+- IF cur_t != tmax THEN CLOSEST HIT SHADER
+- ELSE MISS SHADER
+
 ### Hybrid Topics
 
 - Signed Distance Functions
