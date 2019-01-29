@@ -5,25 +5,24 @@
 - [Graduate Syllabus](cs681-cgr-s19-grad.pdf)
 - [Undergraduate Syllabus](cs481-cgr-s19-undergrad.pdf)
 
-## Wordpress Site
-
-[https://cgrendering.community.uaf.edu/](https://cgrendering.community.uaf.edu/)
-
 ## Instructor Site
 
 [https://www.cs.uaf.edu/~jbmetzgar/](https://www.cs.uaf.edu/~jbmetzgar/)
 
-## Homeworks
+## Homeworks, Hybrid Topics, and Slides
 
-The [homework worksheets](homeworks/index.md) are in the `homeworks` folder. The projects will be hosted at [https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/](https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/index.html).
+- The [homework worksheets](homeworks/index.md) are in the `homeworks` folder. The projects will be hosted at [https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/](https://www.cs.uaf.edu/~jbmetzgar/courses/cgr/S19/index.html).
+- The Hybrid Topics [Activity Worksheets](hybrid-topics/index.md) are in the `hybrid-topics` folder.
+- The [class slides](slides/index.md) are in the `slides` folder. A "notes" version can be viewed with the Markdown file which is used to create the Powerpoint version.
 
-## Hybrid Topics Activity Worksheets
+## Videos
 
-The [activity worksheets](hybrid-topics/index.md) are in the `hybrid-topics` folder.
-
-## Class Slides & Notes
-
-The [class slides] are in the `slides` folder. A "notes" version can be viewed with the Markdown file which is used to create the Powerpoint version.
+| Week  | Topic/Link                                                                    |
+| :---: | :---------------------------------------------------------------------------- |
+|   1   | [Class 1 Live Stream](https://www.youtube.com/watch?v=HFiOrONmx4c)            |
+|   1   | [Computer Graphics Crash Course](https://www.youtube.com/watch?v=COD96gGCV2Y) |
+|   2   | [Class 2 Live Stream](https://youtu.be/kFiOFk4555w)                           |
+|   2   | [Ray Tracing](https://www.youtube.com/watch?v=oo-aPeL4VSA)                    |
 
 ## Setting up for Graphics
 
@@ -52,3 +51,5 @@ Install these plugins
 ## Good Graphics Links
 
 - [WebGL 1.0 Quick Reference Card](https://www.khronos.org/files/webgl/webgl-reference-card-1_0.pdf)
+- [Ray Tracing in One Weekend](https://github.com/petershirley/raytracinginoneweekend) by Peter Shirley
+- [An Introduction to Ray Tracing](http://www.realtimerendering.com/blog/an-introduction-to-ray-tracing-is-now-free-for-download/) edited by Andrew Glassner
