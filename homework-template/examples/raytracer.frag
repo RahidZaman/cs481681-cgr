@@ -527,8 +527,12 @@ vec3 sfRayCast(Ray r)
 
 
 void sfCreateScene() {
-    sfAddHitable(sfCreateSphere(vec3(0.0, 0.0, 0.0), 0.5,
+    sfAddHitable(sfCreateSphere(vec3(0.0, -1001.0, 0.0), 1000.0,
+                                sfCreateMaterial(Brown, White, 0.0)));
+    sfAddHitable(sfCreateSphere(vec3(-1.0, 0.5 * sin(iTime) + 0.0, 0.0), 0.5,
                                 sfCreateMaterial(Blue, White, 0.0)));
+    sfAddHitable(sfCreateSphere(vec3(0.5 * sin(iTime) + 1.0, 0.0, 0.0), 0.5,
+                                sfCreateMaterial(Red, White, 0.0)));
 }
 
 vec3 Sunfish(in Ray r)

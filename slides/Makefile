@@ -1,5 +1,5 @@
 
-SRCS := $(wildcard *.md)
+SRCS := $(wildcard week*.md)
 PPTX := $(addprefix pptx/,$(SRCS:.md=.pptx))
 PDF  := $(addprefix pdf/,$(SRCS:.md=.pdf))
 DEPS := custom-reference.pptx

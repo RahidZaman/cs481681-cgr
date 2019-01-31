@@ -14,7 +14,8 @@ class ExampleMetadata {
             "WebGL Basic Code",
             "LibXOR Basic Code",
             "Popping Blocks",
-            "Ray Tracer"
+            "Ray Tracer",
+            "Windy Blocks"
         ];
         this.numExamples = this.exampleDescs.length;
         this.courseNumber = "CS F482/F680";
