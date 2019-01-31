@@ -23,6 +23,8 @@
 |   1   | [Computer Graphics Crash Course](https://www.youtube.com/watch?v=COD96gGCV2Y) |
 |   2   | [Class 2 Live Stream](https://youtu.be/kFiOFk4555w)                           |
 |   2   | [Ray Tracing](https://www.youtube.com/watch?v=oo-aPeL4VSA)                    |
+|   3   | [Class 3 Live Stream](https://www.youtube.com/watch?v=mwc7csBs3wY)            |
+|   3   | [Miss Shaders and Sky Models](https://www.youtube.com/watch?v=PUF8OrbQLpc)    |
 
 ## Setting up for Graphics
 
