@@ -1,6 +1,6 @@
 # Miss Shaders & Sky Models Activity Worksheet
 
-[PDF version of this document](pdfs/03-miss-shaders-sky-models.pdf)
+[PDF version of this document](pdf/03-miss-shaders-sky-models.pdf)
 
 ## YouTube Video(s)
 
