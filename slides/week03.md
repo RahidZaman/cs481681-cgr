@@ -40,4 +40,4 @@ ELSE MISS_SHADER(h)
 
 ## Hybrid Topics
 
-- Signed Distance Functions
+- Miss Shaders and Sky Models

@@ -352,9 +352,8 @@ app.start();
 </script>
 ```
 
-# Hybrid Topics
+## Hybrid Topics
 
-## Ray Tracing
-
+- Ray Tracing
 - Watch YouTube Video
 - Complete Activity Worksheet
