@@ -25,7 +25,7 @@
 |   2   | [Ray Tracing](https://www.youtube.com/watch?v=oo-aPeL4VSA)                    |
 |   3   | [Class 3 Live Stream](https://www.youtube.com/watch?v=mwc7csBs3wY)            |
 |   3   | [Miss Shaders and Sky Models](https://www.youtube.com/watch?v=PUF8OrbQLpc)    |
-|   4   | [Class 4 Live Stream]()                                                       |
+|   4   | [Class 4 Live Stream](https://youtu.be/h6dvnKKwPy4)                           |
 |   4   | [Any Hit Shaders and Shadows]()                                               |
 |   5   | [Closest Hit Shaders & BRDFs]()                                               |
 |   6   | [Global Illumination & Spherical Harmonics]()                                 |
@@ -36,6 +36,10 @@
 |  12   | [Post Processing]()                                                           |
 |  13   | [Miscellaneous Topics]()                                                      |
 |  14   | [Final Presentations]()                                                       |
+
+## LibXOR Library
+
+The examples for this and other classes is located in the [LibXOR repository](https://www.github.com/microwerx/libxor/).
 
 ## Setting up for Graphics
 

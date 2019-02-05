@@ -64,13 +64,17 @@ digraph G {
 - [Bruneton-Neyret (2008)](http://www-ljk.imag.fr/Publications/Basilic/com.lmc.publi.PUBLI_Article@11e7cdda2f7_f64b69/article.pdf)
 - [DIHARAW's port](https://github.com/diharaw/AtmosphericScattering)
 
-## Sky Model Frame of Reference
+## Preetham et al Frame of Reference
 
 ![Preetham et al. Sun Sky](images/shirley-sunsky.png)
 
-## Sky Model Frame of Reference
+## Hosek-Wilkie Frame of Reference
 
 ![Hosek-Wilkie Sun Sky](images/hosek-wilkie-sunsky.png)
+
+## CIE Model Frame of Reference
+
+![CIE ISO 15469:2004](images/cie-sunsky.png)
 
 ## Parameters
 
