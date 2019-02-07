@@ -26,7 +26,7 @@
 |   3   | [Class 3 Live Stream](https://www.youtube.com/watch?v=mwc7csBs3wY)            |
 |   3   | [Miss Shaders and Sky Models](https://www.youtube.com/watch?v=PUF8OrbQLpc)    |
 |   4   | [Class 4 Live Stream](https://youtu.be/h6dvnKKwPy4)                           |
-|   4   | [Any Hit Shaders and Shadows]()                                               |
+|   4   | [Any Hit Shaders and Shadows](https://youtu.be/lj-M0Nc6qVc)                   |
 |   5   | [Closest Hit Shaders & BRDFs]()                                               |
 |   6   | [Global Illumination & Spherical Harmonics]()                                 |
 |   7   | [Signed Distance Functions & Creative Synthesis]()                            |

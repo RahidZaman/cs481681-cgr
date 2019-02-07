@@ -2,8 +2,7 @@
 
 ## YouTube Video(s)
 
-- [Video 1]()
-- [Video 2]()
+[Any Hit Shaders, Shadows, and Participating Media](https://youtu.be/lj-M0Nc6qVc)
 
 ## Outline
 
