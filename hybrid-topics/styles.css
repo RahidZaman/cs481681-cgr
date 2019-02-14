@@ -1,4 +1,4 @@
-@import url('assets/fonts/stylesheet.css');
+@import url('z:/uaf/www/assets/fonts/stylesheet.css');
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -44,7 +44,7 @@ pre,
 h1,
 h2,
 h3 {
-    font-family: linbiolinum, 'URW Geometric Heavy', Futura, 'Trebuchet MS', sans-serif;
+    font-family: linbiolinum, 'Linux Biolinum O', 'URW Geometric Heavy', Futura, 'Trebuchet MS', sans-serif;
     line-height: 1.0em;
 }
 
