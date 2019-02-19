@@ -7,8 +7,9 @@
 
 ## Outline
 
-- Item 1
-- Item 2
+- What is Global Illumination?
+- Regular Expression Notation
+- Path Tracing
 
 ## Activities
 
