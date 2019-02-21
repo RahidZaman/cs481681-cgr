@@ -1,9 +1,8 @@
-# Global Illumination & Spherical Harmonics Activity Worksheet
+# Global Illumination Activity Worksheet
 
 ## YouTube Video(s)
 
-- [Video 1]()
-- [Video 2]()
+- [Global Illumination](https://youtu.be/fFXMDhn_M28)
 
 ## Outline
 
