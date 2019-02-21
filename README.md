@@ -28,6 +28,7 @@
 |   4   | [Class 4 Live Stream](https://youtu.be/h6dvnKKwPy4)                           |
 |   4   | [Any Hit Shaders and Shadows](https://youtu.be/lj-M0Nc6qVc)                   |
 |   5   | [Closest Hit Shaders & BRDFs](https://youtu.be/_Xxkosq7vxk)                   |
+|   5   | [Class 5 Live Stream](https://youtu.be/S0DBLkVe-zo)                           |
 |   6   | [Global Illumination](https://youtu.be/fFXMDhn_M28)                           |
 |   7   | [Signed Distance Functions & Creative Synthesis]()                            |
 |   8   | [Acceleration Structures]()                                                   |
