@@ -9,14 +9,26 @@
 
 - What is Global Illumination?
 - Regular Expression Notation
-- Path Tracing
+- Path Tracing and Radiosity
+- Global Illumination Techniques
+- Spherical Harmonics
 
-## Activities
+## Learning Activities
 
-1. Item 1
-2. Item 2
+Discuss your answers on Slack
 
-## Graduate Student Activities
+- How do you relate the rendering equation to global illumination?
+- Pick one of the following methods and describe how it works
+  - What is Instant Radiosity?
+  - What is Photon Mapping?
+  - What is Bidirectional Path Tracing?
+  - What is Multiple Importance Sampling?
+- What are "fireflies?"
+- Create or share an image created with Path Tracing
 
-1. Item 1
-2. Item 2
+## Graduate Student Learning Activities
+
+Discuss your answers on Slack
+
+- Find and share one of the seminal papers related to the methods listed above
+- Seminal means "strongly influencing later developments"
