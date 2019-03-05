@@ -11,6 +11,27 @@
 - Global Illumination Techniques
 - Spherical Harmonics
 
+## Midterm Procedures
+
+- Will be posted on Thursday by 9am
+- You have 48 hours to complete the exam
+- It is due before 9am on Saturday morning
+- Late submissions are automatically a zero, sorry
+- Write your submissions in Latex by filling in the template on Overleaf
+- Submit the PDF
+
+## Midterm Resources
+
+- Whitted 1980 [An Improved Illumination Model for Shaded Display](http://www.cs.drexel.edu/~david/Classes/CS586/Papers/p343-whitted.pdf)
+- Cook and Torrance 1982 [A Reflectance Model for Computer Graphics](https://inst.cs.berkeley.edu/~cs283/sp13/lectures/cookpaper.pdf)
+- Kajiya 1986 [The Rendering Equation](http://www.cse.chalmers.se/edu/year/2016/course/TDA361/rend_eq.pdf)
+- Hart et al 1989 [Ray Tracing Deterministic 3-D Fractals](https://dl.acm.org/citation.cfm?id=74363)
+- John C. Hart 1996 [Sphere tracing: a geometric method for the antialiased ray tracing of implicit surfaces](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.339&rep=rep1&type=pdf)
+- Cook et al 1984 [Distributed ray tracing](http://cseweb.ucsd.edu/~viscomp/classes/cse274/fa18/readings/distribution.pdf)
+- Blinn and Newell 1976 [Texture and Reflection in Computer Generated Images](http://papers.cumincad.org/data/works/att/186e.content.pdf)
+- Veach and Guibas 1995 [Optimally combining sampling techniques for Monte Carlo rendering](http://sites.fas.harvard.edu/~cs278/papers/veach.pdf)
+- Erik Lindholm et al 2001 [A User-Programmable Vertex Engine](https://www.researchgate.net/profile/Henry_Moreton/publication/220720178_A_User-Programmable_Vertex_Engine/links/00463533c5fff145d7000000.pdf)
+
 ## Regular Expression Notation
 
 - $E$ is eye
@@ -120,6 +141,27 @@ $$
   - In our shader, use our coefficients to recalculate the image
   - Now, we have band limited shading!
 
+## Global Illumination
+
+- Greger et al 1998 [The Irradiance Volume](http://sites.fas.harvard.edu/~cs278/papers/pmap.pdf)
+- Ramamoorthi and Hanrahan 2001 [An Efficient Representation for Irradiance Environment Maps](http://www.cs.virginia.edu/~jdl/bib/envmap/representation/ramamoorthi01.pdf)
+- Sloan et al 2002 [Precomputed radiance transfer for real-time rendering in dynamic, low-frequency lighting environments](http://cseweb.ucsd.edu/~ravir/6998/papers/p527-sloan.pdf)
+- Robin Green 2003 [Spherical Harmonic Lighting: The Gritty Details](http://silviojemma.com/public/papers/lighting/spherical-harmonic-lighting.pdf)
+
+## SPH
+
+![](images/test_gallery3_scene_GEN01_03_03_Ks.png)
+![](images/test_gallery3_scene_GEN02_03_03_Ks.png)
+![](images/test_gallery3_scene_GEN03_03_03_Ks.png)
+![](images/test_gallery3_scene_GEN04_03_03_Ks.png)
+![](images/test_gallery3_scene_GEN05_03_03_Ks.png)
+![](images/test_gallery3_scene_HIER01_9_01_Sprime.png)
+![](images/test_gallery3_scene_HIER02_9_01_Sprime.png)
+![](images/test_gallery3_scene_HIER03_9_01_Sprime.png)
+![](images/test_gallery3_scene_HIER04_9_01_Sprime.png)
+![](images/test_gallery3_scene_HIER05_9_01_Sprime.png)
+
 ## Hybrid Topics
 
-- Signed Distance Functions
+- None this week because ...
+- Time Reserved for Midterm Exam
