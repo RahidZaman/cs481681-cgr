@@ -1,0 +1,17 @@
+<!doctype HTML>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        let canvas = document.createElement("canvas");
+        document.body.append(canvas);
+        canvas.width = 640;
+        canvas.height = 480;
+        let gl = canvas.getContext("webgl");
+        gl.clearColor(1.0, 0.0, 0.0, 1.0);
+        gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+        </script>
+    </body>
+</html>

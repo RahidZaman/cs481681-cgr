@@ -31,6 +31,10 @@
 - Blinn and Newell 1976 [Texture and Reflection in Computer Generated Images](http://papers.cumincad.org/data/works/att/186e.content.pdf)
 - Veach and Guibas 1995 [Optimally combining sampling techniques for Monte Carlo rendering](http://sites.fas.harvard.edu/~cs278/papers/veach.pdf)
 - Erik Lindholm et al 2001 [A User-Programmable Vertex Engine](https://www.researchgate.net/profile/Henry_Moreton/publication/220720178_A_User-Programmable_Vertex_Engine/links/00463533c5fff145d7000000.pdf)
+- Heckbert 1990 [Adaptive Radiosity Textures for Bidirectional Ray Tracing](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.84.4862&rep=rep1&type=pdf)
+- Heitz 2014 [Understanding the Masking-Shadowing Function in Microfacet-Based BRDFs](https://hal.inria.fr/hal-01024289/document)
+- Hosek & Wilkie 2012 [An analytic model for full spectral sky-dome radiance](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.370.9449&rep=rep1&type=pdf)
+- Jarosz et al 2008 [Radiance Caching for Participating Media](https://cs.dartmouth.edu/~wjarosz/publications/jarosz08radiance.pdf)
 
 ## Regular Expression Notation
 
