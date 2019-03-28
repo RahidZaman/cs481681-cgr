@@ -31,9 +31,9 @@
 |   5   | [Class 5 Live Stream](https://youtu.be/S0DBLkVe-zo)                           |
 |   6   | [Global Illumination](https://youtu.be/fFXMDhn_M28)                           |
 |   7   | [Signed Distance Functions & Creative Synthesis]()                            |
-|   8   | [Acceleration Structures]()                                                   |
-|  10   | [Shadow Mapping and Shadow Volumes]()                                         |
-|  11   | [Realtime Rendering]()                                                        |
+|   8   | No video due to midterm                                                       |
+|  10   | No video due to presentations/midterm                                         |
+|  11   | [Realtime Rendering](https://youtu.be/TZV4gxhC1Bw)                            |
 |  12   | [Post Processing]()                                                           |
 |  13   | [Miscellaneous Topics]()                                                      |
 |  14   | [Final Presentations]()                                                       |
